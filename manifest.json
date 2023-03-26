@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+
+  "name": "Apple 1xBet Plugin @RED CAPER",
+  "description": "Скрипт для Apple of Fortune от 1xBet",
+  "version": "5.1",
+  
+    "icons":{
+          "128":"icon.png"
+    },	
+    "permissions": ["webNavigation"],
+    "action":{
+        "default_icon":"icon.png"
+    },
+    "content_scripts": [
+    {
+      "matches":["http://*/*","https://in.1xbet.com/allgamesentrance/fortuneapple"],
+      "js": [ "jquery.min.js","popup.js" ]
+    }
+  ]
+}
